@@ -1,0 +1,40 @@
+{
+  "name": "cards.cyberb.space",
+  "version": "0.0.1",
+  "description": "little express app that makes pictures",
+  "main": "server.js",
+  "engines": {
+    "node": "~14.17.1",
+    "npm": "~8.3.1"
+  },
+  "scripts": {
+    "test": "echo 'Currently no testing configured'",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riastrad/cards.cyberb.space.git"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "nodejs",
+    "image"
+  ],
+  "author": "@riastrad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/riastrad/cards.cyberb.space/issues"
+  },
+  "homepage": "https://github.com/riastrad/cards.cyberb.space#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
+  }
+}
