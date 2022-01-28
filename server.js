@@ -1,8 +1,7 @@
 'use strict';
 
 const express = require('express')
-const processTitle = require('./lib/processTitle');
-const processQS = require('./lib/processQS');
+const processParams = require('./middleware/processParams');
 const generateImage = require('./lib/generateImage');
 
 const server = express();
@@ -17,7 +16,7 @@ server.use((req, res, next) => {
     return next();
 });
 
-server.get('/:title.jpg', processTitle, processQS, generateImage, (req, res) => {
+server.get('/post.jpg', processParams, generateImage, (req, res) => {
     // finalize and send image
     if (res.locals.finalImage) {
         res.type('jpg');
