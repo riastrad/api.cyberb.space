@@ -17,7 +17,6 @@ server.use((req, res, next) => {
 });
 
 server.get('/post.jpg', processParams, generateImage, (req, res) => {
-    // finalize and send image
     if (res.locals.finalImage) {
         res.type('jpg');
         res.send(res.locals.finalImage);
